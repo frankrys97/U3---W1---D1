@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -34,5 +34,94 @@
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar img {
+  height: 80px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #30313594;
+}
+
+.section-image {
+  width: 50%;
+  margin-inline: auto;
+}
+
+.section-image img {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  object-fit: cover;
+}
+
+.custom-button {
+  background-color: #61dafb;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 2px 23px 6px rgba(0, 0, 0, 0.74);
+}
+
+footer {
+  background-color: #282c34;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+@keyframes img-spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .section-image img {
+    animation: img-spin infinite 10s linear;
   }
 }
